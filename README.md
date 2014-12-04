@@ -1,29 +1,21 @@
-opera-developer-fedora
+opera-opensuse
 ======================
 ### How to Create RPM for OpenSUSE
 
 # download .deb package file from Opera repository
 wget http://get.geo.opera.com/pub/opera-developer/<i>version</i>/linux/opera-developer_<i>version</i>_amd64.deb
+wget http://get.geo.opera.com/pub/opera/desktop/<i>version</i>/linux/opera-stable_<i>version</i>_amd64.deb
 
 <i>e.g.</i> wget http://get.geo.opera.com/pub/opera-developer/24.0.1543.0/linux/opera-developer_24.0.1543.0_amd64.deb
-
-# download .deb package file from Ubuntu repository
-Check http://packages.ubuntu.com/trusty-updates/libssl1.0.0
-
-wget http://<i>example.com/somewhere</i>
+<i>e.g.</i> wget http://get.geo.opera.com/pub/opera/desktop/26.0.1656.32/linux/opera-stable_26.0.1656.32_amd64.deb
 
 # build rpm package
 rpmbuild -bb opera-developer.spec
+rpmbuild -bb opera.spec
 
 # install rpm
-yum localinstall opera-developer-*.x86_64.rpm
+rpm -i opera*.x86_64.rpm
 
-# start to use opera developer
-Just click icon or
-
-$ /usr/bin/opera-developer
-
-# screenshot
-- Fedora20
-
-https://twitter.com/nobuyuki_ito/status/483313816810180608/
+# run
+$ opera-developer
+$ opera
