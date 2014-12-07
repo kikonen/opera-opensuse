@@ -1,13 +1,13 @@
 %define deb_opera %{name}_%{version}_amd64.deb
 
-Summary: Opera Developer
+Summary: Opera Stable
 Name: opera
 Version: 26.0.1656.32
 Release: 26
 License: Proprietary
 Group: Applications/Internet
-URL: http://get.geo.opera.com/pub/opera-developer/
-Source0: http://get.geo.opera.com/pub/opera-developer/%{version}/linux/%{deb_opera}
+URL: http://get.geo.opera.com/pub/opera-stable/
+Source0: http://get.geo.opera.com/pub/opera-stable/%{version}/linux/%{deb_opera}
 Vendor: Opera Software ASA
 Packager: Nobuyuki Ito
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
@@ -17,7 +17,7 @@ BuildRequires: binutils xz tar systemd
 Provides: libudev.so.0()(64bit)
 
 %description
-Opera Developer
+Opera Stable
 
 %prep
 
@@ -45,7 +45,7 @@ ln -sr $RPM_BUILD_ROOT%{_libdir}/%{name}/%{name} $RPM_BUILD_ROOT%{_bindir}/%{nam
 rm -rf $RPM_BUILD_ROOT%{_datadir}/{lintian}
 
 # correct opera_sandbox permission
-# FATAL:setuid_sandbox_client.cc(283)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /usr/lib64/opera-developer/opera_sandbox is owned by root and has mode 4755.
+# FATAL:setuid_sandbox_client.cc(283)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /usr/lib64/opera-stable/opera_sandbox is owned by root and has mode 4755.
 chmod 4755 $RPM_BUILD_ROOT%{_libdir}/%{name}/opera_sandbox
 
 # create symlink to libudev.so
