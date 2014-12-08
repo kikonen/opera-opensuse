@@ -1,4 +1,4 @@
-%define deb_opera %{name}_%{version}_amd64.deb
+%define deb_opera %{name}-stable_%{version}_amd64.deb
 
 Summary: Opera Stable
 Name: opera
