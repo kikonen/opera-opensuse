@@ -1,9 +1,9 @@
 %define deb_opera %{name}_%{version}_amd64.deb
 
 Summary: Opera Developer
-Name: opera
-Version: 26.0.1656.32
-Release: 26
+Name: opera-developer
+Version: 29.0.1770.1
+Release: 29
 License: Proprietary
 Group: Applications/Internet
 URL: http://get.geo.opera.com/pub/opera-developer/

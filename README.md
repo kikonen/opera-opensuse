@@ -2,20 +2,42 @@ opera-opensuse
 ======================
 ### How to Create RPM for OpenSUSE
 
-# download .deb package file from Opera repository
+# Download .deb package
+
+```bash
 wget http://get.geo.opera.com/pub/opera-developer/<i>version</i>/linux/opera-developer_<i>version</i>_amd64.deb
 wget http://get.geo.opera.com/pub/opera/desktop/<i>version</i>/linux/opera-stable_<i>version</i>_amd64.deb
+```
 
-<i>e.g.</i> wget http://get.geo.opera.com/pub/opera-developer/24.0.1543.0/linux/opera-developer_24.0.1543.0_amd64.deb
-<i>e.g.</i> wget http://get.geo.opera.com/pub/opera/desktop/26.0.1656.32/linux/opera-stable_26.0.1656.32_amd64.deb
+For example,
 
-# build rpm package
-rpmbuild -bb opera-developer.spec
-rpmbuild -bb opera.spec
+```bash
+wget http://get.geo.opera.com/pub/opera-developer/24.0.1543.0/linux/opera-developer_29.0.1770.1_amd64.deb
+wget http://get.geo.opera.com/pub/opera/desktop/26.0.1656.32/linux/opera-stable_27.0.1689.66_amd64.deb
+```
 
-# install rpm
-rpm -i opera*.x86_64.rpm
+# Build rpm package
 
-# run
+```bash
+rpmbuild -bb SPEC/opera-developer.spec
+rpmbuild -bb SPEC/opera.spec
+```
+
+# Install rpm
+
+```bash
+sudo rpm -i ~/rpmbuild/RPMS/opera*.x86_64.rpm
+```
+
+# Run
+
+```bash
 $ opera-developer
 $ opera
+```
+
+
+Contributions
+======================
+
+Pull requests updating spec files into latest'n'greatest opere raleases are welcome.
