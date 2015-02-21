@@ -13,14 +13,14 @@ For example,
 
 ```bash
 wget http://get.geo.opera.com/pub/opera-developer/24.0.1543.0/linux/opera-developer_29.0.1770.1_amd64.deb
-wget http://get.geo.opera.com/pub/opera/desktop/26.0.1656.32/linux/opera-stable_27.0.1689.66_amd64.deb
-```
+wget http://operasoftware.pc.cdn.bitgravity.com/pub/opera/desktop/27.0.1689.69/linux/opera-stable_27.0.1689.69_amd64.deb
+``
 
 # Build rpm package
 
 ```bash
 rpmbuild -bb SPEC/opera-developer.spec
-rpmbuild -bb SPEC/opera.spec
+rpmbuild -bb SPEC/opera-stable.spec
 ```
 
 # Install rpm

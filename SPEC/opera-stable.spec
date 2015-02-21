@@ -2,7 +2,7 @@
 
 Summary: Opera Stable
 Name: opera
-Version: 27.0.1689.66
+Version: 27.0.1689.69
 Release: 27
 License: Proprietary
 Group: Applications/Internet
