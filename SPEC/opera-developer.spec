@@ -2,8 +2,8 @@
 
 Summary: Opera Developer
 Name: opera-developer
-Version: 29.0.1770.1
-Release: 29
+Version: 30.0.1812.0
+Release: 30
 License: Proprietary
 Group: Applications/Internet
 URL: http://get.geo.opera.com/pub/opera-developer/
