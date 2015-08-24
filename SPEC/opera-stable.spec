@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/{lintian}
 chmod 4755 $RPM_BUILD_ROOT%{_libdir}/%{name}/opera_sandbox
 
 # create symlink to libudev.so
-mkdir $RPM_BUILD_ROOT%{_libdir}/%{name}/lib
+#mkdir $RPM_BUILD_ROOT%{_libdir}/%{name}/lib
 ln -sL %{_libdir}/libudev.so.1 $RPM_BUILD_ROOT%{_libdir}/%{name}/lib/libudev.so.0
 
 %clean
