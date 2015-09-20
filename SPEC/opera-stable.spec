@@ -2,8 +2,8 @@
 
 Summary: Opera Stable
 Name: opera
-Version: 31.0.1889.174
-Release: 31
+Version: 32.0.1948.25
+Release: 32
 License: Proprietary
 Group: Applications/Internet
 URL: http://get.geo.opera.com/pub/opera-stable/
